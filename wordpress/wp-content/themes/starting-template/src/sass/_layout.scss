@@ -1,0 +1,41 @@
+body {
+	background: $color-background;
+	margin:0;
+}
+
+header,
+.container,
+footer {
+	width:88%;
+	max-width: $container-width;
+	margin:0 auto;
+}
+.wrapper {
+	padding:1em 0;
+	background: $color-background-container;
+}
+
+img {
+	max-width: 100%;
+}
+
+@media screen and (min-width: $breakpoint-2) {
+
+	.teaser, .single {
+		display: -webkit-flexbox;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.thumb {
+		width: 38%;
+	}
+	.excerpt {
+		width: 62%
+	}
+	main {
+		width: 62%;
+	}
+	.secondary {
+		wdith: 38%;
+	}
+}
